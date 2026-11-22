@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "articles": [
+    {
+      "id": "openai-research-acceleration-2026-11-18",
+      "title": "OpenAI 公布 AI 研发任务自动化进展",
+      "published_at": "2026-11-18",
+      "verified_at": "2026-11-21",
+      "organization": "OpenAI",
+      "category": "research",
+      "confirmed": true,
+      "summary": "公开量化 Agent 在内部研发任务上的完成情况；任务自动化能力提升，但尚未证明多代自主研发加速。",
+      "assessment": "AI 辅助 AI 研发的产业证据；不是完整 RSI 闭环。",
+      "tags": [
+        "OpenAI",
+        "Agent",
+        "研发加速"
+      ],
+      "sources": [
+        {
+          "label": "OpenAI 原始报告",
+          "url": "https://openai.com/index/research-acceleration-jagged-frontier/"
+        }
+      ]
+    },
+    {
+      "id": "metr-anthropic-assessment-2026-11-05",
+      "title": "METR 评估 Anthropic 的 AI 研发加速",
+      "published_at": "2026-11-05",
+      "verified_at": "2026-11-21",
+      "organization": "METR / Anthropic",
+      "category": "research",
+      "confirmed": true,
+      "summary": "独立评估观察到选定模型能力指标的增长速率加快，但 AI 辅助研发的因果贡献仍有不确定性。",
+      "assessment": "值得关注的间接证据；不构成多代递归闭环的直接验证。",
+      "tags": [
+        "METR",
+        "Anthropic",
+        "独立评估"
+      ],
+      "sources": [
+        {
+          "label": "METR 原始评估",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+        }
+      ]
+    },
+    {
+      "id": "sakana-mass-2026-10",
+      "title": "Sakana AI：模型与多 Agent 工作流共同优化",
+      "published_at": "2026-10-12",
+      "verified_at": "2026-11-21",
+      "organization": "Sakana AI",
+      "category": "crossgen",
+      "confirmed": true,
+      "summary": "研究模型与多 Agent 工作流的短周期交替优化；尚缺长期研发效率逐代加速的独立验证。",
+      "assessment": "受限的联合优化实验，不能等同于强 RSI。",
+      "tags": [
+        "Sakana AI",
+        "MASS",
+        "多 Agent"
+      ],
+      "sources": [
+        {
+          "label": "Sakana AI 项目说明",
+          "url": "https://sakana.ai/mass/"
+        },
+        {
+          "label": "论文",
+          "url": "https://arxiv.org/abs/2610.12176"
+        }
+      ]
+    }
+  ]
+}
