@@ -5,7 +5,7 @@
       "id": "openai-research-acceleration-2026-11-18",
       "title": "OpenAI 公布 AI 研发任务自动化进展",
       "published_at": "2026-11-18",
-      "verified_at": "2026-11-21",
+      "verified_at": "2026-11-22",
       "organization": "OpenAI",
       "category": "research",
       "confirmed": true,
@@ -24,10 +24,77 @@
       ]
     },
     {
+      "id": "sim-continual-rsi-2026-11-13",
+      "title": "SIM：跨模型延续 Harness 自我改进的记忆机制",
+      "published_at": "2026-11-13",
+      "organization": "研究论文（arXiv）",
+      "category": "harness",
+      "summary": "Self-Improvement Memory 保存 Harness 修改的原因、结果和评估环境。十次编程实验中，相比仅延续 Harness 的方案，最终分数平均提高 2.36 分。",
+      "assessment": "跨任务、跨模型的优化记忆迁移；不代表自主训练出更强的后继基础模型。",
+      "tags": [
+        "SIM",
+        "CRSI",
+        "Harness",
+        "跨模型"
+      ],
+      "sources": [
+        {
+          "label": "arXiv 原始论文",
+          "url": "https://arxiv.org/abs/2611.18856"
+        }
+      ],
+      "verified_at": "2026-11-22",
+      "confirmed": true
+    },
+    {
+      "id": "rsi-tax-2026-11-10",
+      "title": "RSI Tax：自我改进可能得不偿失",
+      "published_at": "2026-11-10",
+      "organization": "研究论文（arXiv）",
+      "category": "harness",
+      "summary": "研究把改进过程的 Token 消耗计入总成本；简单的有界笔记方案在对照中达到或超过多种 RSI 方法，且平均节省 65.6%—71.0% Token。",
+      "assessment": "重要的反面实验证据：最终任务得分上升，不等于端到端研发效率提高。",
+      "tags": [
+        "RSI Tax",
+        "成本",
+        "验证开销"
+      ],
+      "sources": [
+        {
+          "label": "arXiv 原始论文",
+          "url": "https://arxiv.org/abs/2611.13524"
+        }
+      ],
+      "verified_at": "2026-11-22",
+      "confirmed": true
+    },
+    {
+      "id": "infrarsi-2026-11-08",
+      "title": "InfraRSI：AI 优化大模型训练基础设施",
+      "published_at": "2026-11-08",
+      "organization": "InfraRSI 研究团队",
+      "category": "research",
+      "summary": "在四类单节点和多节点 LLM 训练负载上，报告最高 2.75 倍加速，平均模型 FLOPs 利用率从 17.4% 提高到 30.0%。",
+      "assessment": "属于训练基础设施的自适应优化；未验证后继模型能更有效地研发下一代模型。",
+      "tags": [
+        "InfraRSI",
+        "训练基础设施",
+        "效率"
+      ],
+      "sources": [
+        {
+          "label": "arXiv 原始论文",
+          "url": "https://arxiv.org/abs/2611.11558"
+        }
+      ],
+      "verified_at": "2026-11-22",
+      "confirmed": true
+    },
+    {
       "id": "metr-anthropic-assessment-2026-11-05",
       "title": "METR 评估 Anthropic 的 AI 研发加速",
       "published_at": "2026-11-05",
-      "verified_at": "2026-11-21",
+      "verified_at": "2026-11-22",
       "organization": "METR / Anthropic",
       "category": "research",
       "confirmed": true,
@@ -46,10 +113,32 @@
       ]
     },
     {
+      "id": "rsi-env-2026-11-01",
+      "title": "RSI-Env：模型与 Harness 联合跨代更新",
+      "published_at": "2026-11-01",
+      "organization": "研究论文（arXiv）",
+      "category": "crossgen",
+      "summary": "每个被接受的模型与 Harness 版本继续负责下一轮改进。论文报告一组 SimpleQA 实验准确率从 82% 依次提升到 85% 和 88%。",
+      "assessment": "展示受限实验中的连续系统更新，但未证明模型研发效率逐代加速，也缺少长期独立验证。",
+      "tags": [
+        "RSI-Env",
+        "跨代更新",
+        "模型与Harness"
+      ],
+      "sources": [
+        {
+          "label": "arXiv 原始论文",
+          "url": "https://arxiv.org/abs/2611.01736"
+        }
+      ],
+      "verified_at": "2026-11-22",
+      "confirmed": true
+    },
+    {
       "id": "sakana-mass-2026-10",
       "title": "Sakana AI：模型与多 Agent 工作流共同优化",
       "published_at": "2026-10-12",
-      "verified_at": "2026-11-21",
+      "verified_at": "2026-11-22",
       "organization": "Sakana AI",
       "category": "crossgen",
       "confirmed": true,
@@ -63,7 +152,7 @@
       "sources": [
         {
           "label": "Sakana AI 项目说明",
-          "url": "https://sakana.ai/mass/"
+          "url": "https://pub.sakana.ai/mass/"
         },
         {
           "label": "论文",
