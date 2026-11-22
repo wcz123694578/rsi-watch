@@ -24,6 +24,29 @@
       ]
     },
     {
+      "id": "gpt-6-2-astra-high-self-improvement-2026-11-17",
+      "title": "GPT-6.2 Astra 达到 OpenAI 的 AI Self-Improvement High 能力阈值",
+      "published_at": "2026-11-17",
+      "verified_at": "2026-11-22",
+      "organization": "OpenAI",
+      "category": "research",
+      "confirmed": true,
+      "summary": "OpenAI 系统卡确认 GPT-6.2 Astra 是其首个对外发布、达到 AI Self-Improvement High 阈值的模型；GPT-6.2 Sol 未达到该阈值。",
+      "assessment": "属于模型 AI 研发相关能力评估的重要里程碑；High 阈值不是强 RSI 多代闭环认证。",
+      "tags": [
+        "OpenAI",
+        "GPT-6.2 Astra",
+        "AI Self-Improvement",
+        "High"
+      ],
+      "sources": [
+        {
+          "label": "OpenAI 系统卡",
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol"
+        }
+      ]
+    },
+    {
       "id": "sim-continual-rsi-2026-11-13",
       "title": "SIM：跨模型延续 Harness 自我改进的记忆机制",
       "published_at": "2026-11-13",
