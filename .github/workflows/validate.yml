@@ -1,0 +1,39 @@
+name: Validate RSI news archive
+on:
+  push:
+    paths:
+      - 'data/**'
+      - '.github/workflows/validate.yml'
+  pull_request:
+    paths:
+      - 'data/**'
+      - '.github/workflows/validate.yml'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate archive JSON
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, datetime
+          data=json.loads(pathlib.Path("data/index.json").read_text(encoding="utf-8"))
+          status=json.loads(pathlib.Path("data/status.json").read_text(encoding="utf-8"))
+          assert isinstance(data["articles"],list)
+          ids=set()
+          allowed={"reflection","harness","research","crossgen","strong"}
+          for a in data["articles"]:
+              assert a["id"] not in ids, "duplicate id: "+a["id"]
+              ids.add(a["id"])
+              assert a["category"] in allowed
+              for key in ("id","title","summary","assessment","published_at","verified_at"):
+                  assert isinstance(a.get(key),str) and a[key].strip(), (a.get("id"),key)
+              for key in ("published_at","verified_at"):
+                  datetime.date.fromisoformat(a[key])
+              assert isinstance(a.get("sources"),list) and a["sources"]
+              for s in a["sources"]:
+                  assert s["url"].startswith("https://"), a["id"]
+          assert status["stage"] and status["checked_at"]
+          print("Validated",len(ids),"articles")
+          PY
